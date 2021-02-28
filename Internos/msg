@@ -34,6 +34,7 @@ SEMCOR='\e[0m'
   -azu)ccor="${COLOR[6]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
   -verd)ccor="${COLOR[2]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
   -bra)ccor="${COLOR[0]}${SEMCOR}" && echo -e "${ccor}${2}${SEMCOR}";;
-  "-bar2"|"-bar")ccor="${COLOR[1]}•••••••••••••••••••••••••••••••••••••••••••••••••" && echo -e "${SEMCOR}${ccor}${SEMCOR}";;
+  #"-bar2"|"-bar")ccor="${COLOR[1]}•••••••••••••••••••••••••••••••••••••••••••••••••" && echo -e "${SEMCOR}${ccor}${SEMCOR}";;
+  "-bar2"|"-bar")ccor="${COLOR[1]}—————————————————————————————————————————————————" && echo -e "${SEMCOR}${ccor}${SEMCOR}";;
  esac
 }
