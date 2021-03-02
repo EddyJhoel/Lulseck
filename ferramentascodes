@@ -66,7 +66,7 @@ msg -bar #
 echo -e "Registro agregado"
 msg -bar #
 sleep 2s
-cgh
+lsk
 }
 
 function_3 () {
