@@ -89,7 +89,7 @@ recuva1 ()
 source <(curl -sL https://raw.githubusercontent.com/EddyJhoel/Lulseck/master/Internos/back/sd)
 }
 
-fun_barcgh () {
+fun_barlsk () {
 comando[0]="$1"
 comando[1]="$2"
 (
@@ -766,7 +766,7 @@ cat /bin/ejecutar/bannerssh > $local
 rm /bin/ejecutar/bannerssh
 #read -p " ${txt[226]}: " ban_ner2
 #echo $ban_ner2 > $local
-fun_barcgh
+fun_barlsk
 #echo '<h1><font>===================================</font></h1>' >> $local
 credi=$(cat < /root/name)
 echo '<p style="text-align: center;"><strong><span style="color: #FF00FF;">Lulseck&reg;</span> |&nbsp;</strong><span style="color: #483D8B;"><strong>'$credi'</strong></span></p>' >> $local
