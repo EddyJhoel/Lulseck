@@ -1028,8 +1028,7 @@ install_completed_libev
 qr_generate_libev
 fi
 echo
-echo "ChumoGH - Shadowsocks"
-echo "t.me/ChumoGH"
+echo "Install - Shadowsocks"
 echo
 }
 install_cleanup(){
