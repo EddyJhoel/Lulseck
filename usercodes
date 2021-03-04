@@ -793,7 +793,7 @@ echo -e "\033[1;31m[\033[1;36m02\033[1;31m]\033[1;33m Letra Media"
 echo -e "\033[1;31m[\033[1;36m03\033[1;31m]\033[1;33m Letra Grande"
 echo -e "\033[1;31m[\033[1;36m04\033[1;31m]\033[1;33m Letra ExtraGrande"
 echo ""
-echo -ne "\033[1;32mElije el Tamaño de Letra\033[1;31m ?\033[1;37m : "; read opc
+echo -ne "\033[1;32mElige el Tamaño de Letra\033[1;31m ?\033[1;37m : "; read opc
 if [[ "$opc" = "1" ]] || [[ "$opc" = "01" ]]; then
 _size='6'
 elif [[ "$opc" = "2" ]] || [[ "$opc" = "02" ]]; then
@@ -815,9 +815,9 @@ echo -e " \033[1;31m[ 5 ]\033[1;33m - ${txt[231]}       \033[1;31m[ 16 ]\033[1;3
 echo -e " \033[1;31m[ 6 ]\033[1;33m - Naranja       \033[1;31m[ 17 ]\033[1;33m - Dorado"
 echo -e " \033[1;31m[ 7 ]\033[1;33m - Crema         \033[1;31m[ 18 ]\033[1;33m - Rosado"
 echo -e " \033[1;31m[ 8 ]\033[1;33m - Cyano         \033[1;31m[ 19 ]\033[1;33m - Celeste"
-echo -e " \033[1;31m[ 9 ]\033[1;33m - Azul Oscuro   \033[1;31m[ 20 ]\033[1;33m - Morado"
-echo -e " \033[1;31m[ 10 ]\033[1;33m - Magenta      \033[1;31m[ 21 ]\033[1;33m - Turqueza"
-echo -e " \033[1;31m[ 11 ]\033[1;33m - Chocolate    \033[1;31m[ *  ]\033[1;33m - Negro"
+echo -e " \033[1;31m[ 9 ]\033[1;33m - Azul Oscuro         \033[1;31m[ 20 ]\033[1;33m - Morado"
+echo -e " \033[1;31m[ 10 ]\033[1;33m - Magenta         \033[1;31m[ 21 ]\033[1;33m - Turqueza"
+echo -e " \033[1;31m[ 11 ]\033[1;33m - Chocolate         \033[1;31m[ *  ]\033[1;33m - Negro"
 
 read -p " Digite A Cor [ 1 - 21 ]: " ban_ner2_cor
 if [[ "$ban_ner2_cor" = "1" ]]; then
@@ -870,10 +870,11 @@ echo "</h"$_size"></font>" >> $local
 }
 
 function_7 () {
-cowsay -f stegosaurus "BIENVENIDO Y GRACIAS POR UTILIZAR ☆Lulseck☆ Scrip "| lolcat
-echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠" | lolcat
-echo -e "${cor[2]}MENU BANNER  (RECOMENDADO 2):\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\n${cor[2]}[1]-Pegar BANNER Personalizado (No Recomendado)\n[2]-Crear con Menu del SCRIPT"| lolcat
-echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠" | lolcat
+echo -e "${cor[1]}-------- ☆Lulseck - Banner Personalizado☆ -------" | lolcat
+msg -bar #echo -e "$barra"
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=" | lolcat
+echo -e "${cor[2]}MENU BANNER  (RECOMENDADO 2):\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=\n${cor[2]}[1]-Pegar BANNER Personalizado (No Recomendado)\n[2]-Crear con Menu del SCRIPT"| lolcat
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=" | lolcat
 echo -ne " Opción: "; read lang
 case $lang in
 1)
@@ -895,7 +896,7 @@ echo "Banner /etc/bannerssh" >> /etc/ssh/sshd_config
 local="/etc/bannerssh"
 fi
 while true; do
-echo -e " ESTAS SEGURO QUE TIENES TU BANNER BIEN ESTRUCTURADO "
+echo -e " ¿ESTÁS SEGURO QUE TIENES TU BANNER BIEN ESTRUCTURADO? "
 echo -e " Ojo: de lo contrario puede causar error en el sistema"
 read -p " [ s | n ]: " sin_nao
  if [[ "$sin_nao" = @(s|S|y|Y) ]]; then
@@ -909,8 +910,8 @@ done
 2)
 unset sshsn
 unset sin_nao
-echo -e "${cor[3]} "Buena ELECCION, Tienes un 99% mas Garantia""
-echo -e "${cor[3]} "Esta SEGURO:""
+echo -e "${cor[3]} "Buena ELECCIÓN, Tienes un 99% mas Garantía""
+echo -e "${cor[3]} "Estas SEGURO:""
 read -p " [S/N]: " -e -i s sshsn
 [[ "$sshsn" = @(s|S|y|Y) ]] && {
 local2="/etc/bannerssh"
@@ -1003,7 +1004,7 @@ echo '<h'$_size' style="text-align:center;"><font color="black">' >> $local
 fi
 echo "$ban_ner" >> $local
 echo '</font></h'$_size'>' >> $local
-echo '<h1 style="text-align:center;"><font>××××××××××××××××××××××××××××</font></h1>' >> $local
+echo '<h1 style="text-align:center;"><font>————————————————————————————</font></h1>' >> $local
 while true; do
 echo -e " ${txt[233]}"
 read -p " [ s | n ]: " sin_nao
