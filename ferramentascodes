@@ -781,8 +781,9 @@ echo -e "$barra"
 echo -e " \033[1;36m Instalador SSL/TLS Bridg"
 msg -bar
 echo -e "$barra"
-echo -e "\033[1;36mSelecione un puerto de Redirecionamento Interno"
+echo -e "\033[1;36mSelecione un puerto de Redirecionamento Interno (80)"
 echo -e "\033[1;33mEs decir, un puerto en su servidor para SSL/TLS Bridg"
+echo -e "\036[1;33mNOTA: Necesitas Dropbear puerto 80"
 echo -e "$barra"
          while true; do
          echo -ne "\033[1;37m"
