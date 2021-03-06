@@ -140,7 +140,7 @@ name=$nome
 read -p " ${txt[35]} " pass
 msg -bar #echo -e "${cor[1]} ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ ${cor[0]}"
 echo -e "${cor[5]} ${txt[32]}  $nome"
-echo -e "  Use s = segundos, m = minutos, h = horas e d = dias EX: 14s ."
+echo -e "  Use s = segundos, m = minutos, h = horas e d = dias Ejemplo: 14s ."
 read -p " ${txt[37]} " tempoin
 echo -e "${cor[5]} ${txt[33]}  $name"
 read -p " ${txt[36]} " limit
@@ -194,8 +194,8 @@ echo -ne "${cor[2]}"
 fk
 ######
 #echo -e "-----${cor[4]}      $IP${cor[2]}:${cor[5]}PORT${cor[2]}@${cor[4]}$name${cor[2]}:${cor[4]}$pass "
-echo -e "               Despues de expirar !!!!"
-echo -e "  Este usuario sera desconectados y eliminados."
+echo -e "               Después de expirar !!!!"
+echo -e "  Este usuario sera desconectado y eliminado."
 echo -ne "${cor[2]}"
 bash /etc/usuariosteste/$nome.sh &
 return
@@ -531,7 +531,7 @@ msg -bar #echo -e "${cor[1]} ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪
 read -p " ${txt[9]} " _opt
 if [ "$_opt" = "1" ]; then
 msg -bar #echo -e "${cor[1]} ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ ${cor[0]}"
-echo -e "${cor[5]} Bloqueando USER . . ."
+echo -e "${cor[5]} Bloqueando USUARIO . . ."
 ########
 data=$(cat $dir_user/$namer | grep "data" | awk '{print $2}')
 pass=$(cat $dir_user/$namer | grep "senha" | awk '{print $2}')
@@ -552,7 +552,7 @@ usr_var=$(cat $dir_user/$namer | grep -v "data")
 echo -e "$usr_var" > $dir_user/$namer
 echo -e "data: $valid" >> $dir_user/$namer
 echo -e "$pass" > $dir_user/$namer.block
-echo -e "$namer: BLOEQUEADO $valid"
+echo -e "$namer: BLOQUEADO $valid"
 (echo "LOCK" ; echo "LOCK" ) |passwd $namer > /dev/null 2>/dev/null
 usr_var1=$(cat $dir_user/$namer | grep -v "senha")
 echo -e "$usr_var1" > $dir_user/$namer
@@ -750,15 +750,15 @@ local="/etc/bannerssh"
 figlet -p -f slant < /root/name
 echo -e "${cor[1]}-------【     ★ Lulseck - Scrip 2021 ★     】------" | lolcat
 echo -e "[\033[1;31m-\033[1;33m]\033[1;30m =======================================\033[1;33m"
-echo -e "\033[1;37m ∆ Linux Dist:	$distribution › Version: $os_version\033[0m"
+echo -e "\033[1;37m ∆ Linux Dist:	$distribution › Versión: $os_version\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;30m =======================================\033[1;33m"
-echo -e "\033[1;37m - BANNER Manipulado -  \033[0m"
+echo -e "\033[1;37m - BANNER Manual -  \033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m #######################################\033[1;33m"
 echo -e "\033[1;37mSeleccione su Sistema:    Para Salir Ctrl + C o 0 Para Regresar\033[1;33m"
 echo -e " \033[1;31m[ !!! ]\033[1;33m PEGA AQUI TU BANNER   \033[1;31m\033[1;33m"
 msg -bar #echo -e "${cor[1]} ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪ ${cor[0]}"
 echo -e " \033[1;31mLuego de Pegar tu banner Presiona Ctrl + O y Enter \033[1;33m \033[1;31m\033[1;33m"
-echo -e " \033[1;31m          Por Ultimo Ctrl + X  \033[1;33m \033[1;31m\033[1;33m"
+echo -e " \033[1;31m          Por Último Ctrl + X  \033[1;33m \033[1;31m\033[1;33m"
 echo -ne "\033[1;37m"
 read -p " Presiona Enter para Continuar "
 nano /bin/ejecutar/bannerssh
